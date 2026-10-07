@@ -1,0 +1,62 @@
+algoritmo "Primeiro Programa"
+
+var
+  opcao: inteiro
+  n1: inteiro
+  n2: inteiro
+  resultado: real
+  funcao soma(): inteiro
+    inicio
+      escreval("Digite o primeiro numero: ")
+      leia(n1)
+      escreval("Digite o segundo numero: ")
+      leia(n2)
+      resultado <- n1 + n2
+      escreval("O resultado é: ",resultado)
+  fimfuncao
+  funcao subtracao(): inteiro
+    inicio
+      escreval("Digite o primeiro numero: ")
+      leia(n1)
+      escreval("Digite o segundo numero: ")
+      leia(n2)
+      resultado <- n1 - n2
+      escreval("O resultado é: ",resultado)
+  fimfuncao
+  funcao multiplicacao(): inteiro
+    inicio
+      escreval("Digite o primeiro numero: ")
+      leia(n1)
+      escreval("Digite o segundo numero: ")
+      leia(n2)
+      resultado <- n1 * n2
+      escreval("O resultado é: ",resultado)
+  fimfuncao
+  funcao divisao(): real
+    inicio
+      escreval("Digite o primeiro numero: ")
+      leia(n1)
+      escreval("Digite o segundo numero: ")
+      leia(n2)
+      resultado <- n1 / n2
+      escreval("O resultado é: ",resultado)
+  fimfuncao
+inicio
+  escreval("Menu opção:")
+  escreval("1 - Soma")
+  escreval("2 - Subtração")
+  escreval("3 - Multiplicação")
+  escreval("4 - Divisão")
+  leia(opcao)
+  escolha opcao
+    caso 1
+      soma()
+    caso 2
+      subtracao()
+    caso 3
+      multiplicacao()
+    caso 4
+      divisao()
+  fimescolha
+
+fimalgoritmo
